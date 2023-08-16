@@ -48,6 +48,7 @@ function edit(req, res) {
 }
 
 function update(req, res) {
+    req.body.acquired = !!req.body.acquired
     Skill.update(req.params.id, req.body)
     res.redirect(`/skills/${req.params.id}`)
 }
