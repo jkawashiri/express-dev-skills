@@ -14,10 +14,30 @@ a {
 
 .delete-form button {
   color: red;
-  background-color: white;
 }
 
 .delete-form button:hover {
   color: white;
   background-color: red;
+  transition: 0.3s;
+}
+
+.update-button {
+  color: black;
+}
+
+.update-button:hover {
+  color: white;
+  background-color: #98D4BB;
+  transition: 0.3s;
+}
+
+.save-button {
+  color: black;
+}
+
+.save-button:hover {
+  color: white;
+  background-color: #98D4BB;
+  transition: 0.3s;
 }
