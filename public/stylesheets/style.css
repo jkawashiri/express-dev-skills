@@ -14,8 +14,10 @@ a {
 
 .delete-form button {
   color: red;
+  background-color: white;
 }
 
-li {
-  list-style: none;
-} 
+.delete-form button:hover {
+  color: white;
+  background-color: red;
+}

@@ -2,6 +2,10 @@
 
     <h3><%= skill.skill %></h3>
     <h3>Have I Learned Yet: <%= skill.acquired ? 'Yes' : 'No' %></h3>
-    <a href="/skills/<%= skill.id %>/edit">Edit Skill</a>
+    <a href="/skills/<%= skill.id %>/edit">Edit Skill</a><br>
+    <br><form action="/skills/<%= skill.id %>?_method=DELETE"
+            class="delete-form" method="POST">
+            <button type="submit">Delete Skill</button>
+        </form>
 
 <%- include('../partials/footer') %>
